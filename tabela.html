@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 10px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: gray;
+        }
+
+        a:hover {
+            background-color: orange;
+            color: #333;
+        }
+
+        .content {
+            display: none;
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #firma-img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .arrow {
+            margin-left: 5px;
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#nasza-firma" onclick="toggleContent('nasza-firma')">
+            Nasza Firma
+            <span class="arrow">>></span>
+        </a>
+
+        <a href="#o-nas" onclick="toggleContent('o-nas')">
+            O Nas
+            <span class="arrow">>></span>
+        </a>
+
+        <a href="#uslugi" onclick="toggleContent('uslugi')">
+            Usługi
+            <span class="arrow">>></span>
+        </a>
+
+        <a href="#kontakt" onclick="toggleContent('kontakt')">
+            Kontakt
+            <span class="arrow">>></span>
+        </a>
+    </nav>
+
+    <div class="content" id="nasza-firmaContent">
+        <h2>Witamy w Naszej Firmie</h2>
+        <p>
+            Od 1989 roku jesteśmy pasjonatami motoryzacji, specjalizując się w tuningowaniu samochodów sportowych.
+            Z duma możemy powiedzieć, że mamy zaszczyt obsługiwać zadowolonych klientów z całego świata.
+            Nasza firma zdobyła uznanie dzięki indywidualnemu podejściu do każdego projektu oraz nieustannej dbałości o jakość.
+        </p>
+        <p>
+            Nasza działalność obejmuje nie tylko tuning samochodów, ale także swapowanie silników, tworzenie body kitów
+            oraz wysokiej klasy usługi w zakresie lakierowania pojazdów. Kładziemy nacisk na unikalność i personalizację,
+            tworząc niepowtarzalne dzieła sztuki na czterech kołach.
+        </p>
+        <p>
+            Zaufało nam wielu entuzjastów motoryzacji, dla których samochód to nie tylko środek transportu, ale również
+            wyraz pasji i stylu życia. Dołącz do grona naszych zadowolonych klientów i doświadcz profesjonalizmu
+            oraz kunsztu Naszej Firmy!
+        </p>
+    </div>
+
+    <div class="content" id="o-nasContent">
+        Treść O Nas
+    </div>
+
+    <div class="content" id="uslugiContent">
+        Treść Usług
+    </div>
+
+    <div class="content" id="kontaktContent">
+        Treść Kontaktu
+    </div>
+
+    <img id="firma-img" src="firma.png" alt="Nasza Firma">
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id + "Content");
+            content.style.display = (content.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
+
