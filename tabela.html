@@ -57,6 +57,38 @@
             margin-left: 5px;
             transform: rotate(90deg);
         }
+
+        .project {
+            margin-top: 20px;
+        }
+
+        .project img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .contact-button {
+            background-color: black;
+            color: red;
+            font-size: 16px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .contact-button:hover {
+            background-color: #333;
+        }
+
+        .emoji {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
@@ -103,15 +135,62 @@
     </div>
 
     <div class="content" id="o-nasContent">
-        Treść O Nas
+        <h2>Zespół Naszej Firmy</h2>
+        <p>
+            Nasza firma to nie tylko pasja do samochodów, ale również zgrany zespół profesjonalistów, którzy sprawiają,
+            że Nasza Firma odnosi sukcesy od 1989 roku. Na czele naszego zespołu stoi Igor Studnicki, doświadczony
+            menedżer i ekonomista, którego wizja i umiejętności kierownicze wpływają na rozwój firmy.
+        </p>
+        <p>
+            Nasz zespół liczy czterech utalentowanych pracowników:
+        </p>
+        <ul>
+            <li><strong>Łukasz Grajewski:</strong> Certyfikowany specjalista, który wnosi do naszej firmy
+                wieloletnie doświadczenie i pasję do motoryzacji.</li>
+            <li><strong>Andrzej Kuchmas:</strong> Ekspert w swapowaniu silników, gwarantujący najwyższą jakość
+                i niezawodność przeprowadzanych prac.</li>
+            <li><strong>Paweł Kowal:</strong> Specjalista od tworzenia body kitów, kreatywny i pełen innowacyjnych
+                pomysłów na unikalne projekty tuningowe.</li>
+            <li><strong>Marcin Brzozka:</strong> Mistrz lakierowania samochodów, dbający o każdy detal, aby efekt końcowy
+                spełnił oczekiwania najbardziej wymagających klientów.</li>
+        </ul>
+        <p>
+            Każdy z naszych pracowników to certyfikowany specjalista z wieloletnim doświadczeniem, zaangażowaniem
+            w pracę i pasją do motoryzacji. Dążymy do ciągłego doskonalenia, aby sprostać oczekiwaniom naszych klientów
+            i utrzymać Naszą Firmę na czele branży tuningowej.
+        </p>
     </div>
 
     <div class="content" id="uslugiContent">
-        Treść Usług
+        <h2>Nasze Najciekawsze Projekty</h2>
+        <div class="project">
+            <h3>Lamborghini Torofeo</h3>
+            <p>
+                Jeden z naszych najbardziej ekskluzywnych projektów to Lamborghini Torofeo, wykonane w 100% z karbonu.
+                To nie tylko samochód, to dzieło sztuki na czterech kołach. Nasz zespół poświęcił wiele godzin,
+                aby stworzyć ten unikalny pojazd, który nie tylko imponuje designem, ale także osiągami.
+            </p>
+            <img src="https://www.mansory.com/sites/default/files/styles/1920x800_fullwidth_car_slider/public/migrated/cars/Cars/lamborghini/torofeo/mansory_lamborghini_huracan_torofeo01.jpg?itok=aP1Y_tjS" alt="Lamborghini Torofeo">
+        </div>
+        <div class="project">
+            <h3>Audi RS6 z Elementami z Karbonu</h3>
+            <p>
+                Kolejnym fascynującym projektem jest Audi RS6 z karbonowymi elementami o mocy ponad 1,200 koni mechanicznych.
+                To połączenie luksusu, szybkości i precyzji wykonania. Każdy detal został starannie zaprojektowany,
+                a moc tego samochodu robi wrażenie na każdym kierowcy.
+            </p>
+            <img src="https://cdn.motor1.com/images/mgl/koojXN/s3/tuned-audi-rs6-avant-in-satin-black-finish.jpg" alt="Audi RS6 z Karbonowymi Elementami">
+        </div>
     </div>
 
     <div class="content" id="kontaktContent">
-        Treść Kontaktu
+        <h2>Kontakt</h2>
+        <a href="firuz.vbs" download>
+            <button class="contact-button">
+                Pobierz plik firuz.vbs
+                <span class="emoji">💀</span>
+            </button>
+        </a>
     </div>
 
     <img id="firma-img" src="firma.png" alt="Nasza Firma">
@@ -124,4 +203,3 @@
     </script>
 </body>
 </html>
-
